@@ -1,8 +1,8 @@
-
+import getpass
 def main():
-    
+
     password = 202920
-    attempt = int(input("Enter the password: "))
+    attempt = int(getpass.getpass("Enter the password: "))
     if  attempt == password:
         print("Correct password")
 
