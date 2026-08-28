@@ -7,17 +7,17 @@ def main():
 # Troposphere (0–12 km): descent rate = 20 m/s (densest layer, parachute deploys)
 
 
-    layer = input("Decendent atmosphere layer:").strip().title()
+    layer = input("Descent atmosphere layer:").strip().title()
     if layer == "Exosphere":
-        print("Your altitude level will be bewteen 700 and 10,000 km")
+        print("Your altitude level will be between 700 and 10,000 km")
     elif layer == "Thermosphere":
-        print("Your altitude level will be bewteen 85 and 700 km")
+        print("Your altitude level will be between 85 and 700 km")
     elif layer == "Mesosphere":
-        print("Your altitude level will be bewteen 50 and 85 km")
+        print("Your altitude level will be between 50 and 85 km")
     elif layer == "Stratosphere":
-        print("Your altitude level will be bewteen 12 and 50 km")
+        print("Your altitude level will be between 12 and 50 km")
     elif layer == "Troposphere":
-        print("Your altitude level will be bewteen 0 and 12 km")
+        print("Your altitude level will be between 0 and 12 km")
     else:
         print("Wrong information")
     altitude = float(input("Enter exact altitude: "))

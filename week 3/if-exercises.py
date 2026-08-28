@@ -14,24 +14,20 @@ def main():
     number1 = float(input("Number 1: "))
     number2 = float(input("Number 2: "))
     operation = input("Operation: ")
-    add = number1+number2
-    multiply = number1*number2
-    subtract = number1-number2
-
-
-    if operation == add:
-        print(add)
-    elif operation == multiply:
-        print(multiply)
-    elif operation == subtract:
-        print(subtract)
+    
+    if operation == "add":
+        print(number1+number2)
+    elif operation == "multiply":
+        print(number1*number2)
+    elif operation == "subtract":
+        print(number1-number2)
     else:
         print()
 
     #String Calculator
     operation = float(input("Write an arithmethic expression: "))
     part = operation.split()
-    
+
 
 
 if __name__=="__main__":
