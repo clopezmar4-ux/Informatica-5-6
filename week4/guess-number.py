@@ -23,9 +23,8 @@ def main():
             elif number == easy:
                 print(f"Good job, {user}! You guessed my number!")
                 break
-            else:
-                attempt = 0
-                print("Sorry you lose")
+        if attempt == 0:
+            print("Sorry you lose")
 
 
     elif level == "medium":
@@ -43,9 +42,8 @@ def main():
             elif number == medium:
                 print(f"Good job, {user}! You guessed my number!")
                 break
-            else:
-                attempt = 0
-                print("Sorry you lose")
+        if attempt == 0:
+            print("Sorry you lose")
     elif level == "harder":
         print(f"Well, {user}, I am thinking of a number between 1 and 1000")
         while attempt > 0:
@@ -61,9 +59,8 @@ def main():
             elif number == harder:
                 print(f"Good job, {user}! You guessed my number!")
                 break
-            else:
-                attempt = 0
-                print("Sorry you lose")
+        if attempt == 0:
+            print("Sorry you lose")
 
 
 
