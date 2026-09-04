@@ -36,7 +36,7 @@ def main():
                 print("You are a genius!, see you next time")
 
         elif guess == multy:
-            treak += 1
+            streak += 1
             if streak == 1:
                 print("streak:", star)
                 print("Correct!, next question")
