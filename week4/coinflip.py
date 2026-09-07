@@ -2,22 +2,25 @@ import random
 
 def main():
 
-    person = int(input("If you want heads put 1 but if you want tails put 2: "))
 
-    coin = random.randint(1,2)
-    if coin == 1:
-        print("Heads")
+    coin = ["heads","tails"]
+    coin = random.choice(coin)
+    attempts = 3
 
-    elif coin == 2:
-        print("Tails")
+    while attempts > 0:
+        person = input("You want heads or tails: ").strip().lower()
 
-    if person == coin:
-        print("winner")
-        
-    elif person != coin:
-        print("Loser")
-    else:
-        print("Wrong information")
+        print("The coin landed on",coin)
+        if person == coin:
+            print("winner")
+            break
+        elif person != coin:
+            print("Loser")
+            attempts -= 1
+            print("attempts left:", attempts)
+        else:
+            if attempts == 0:
+                print("You dont have more oportunities")
 
 
 
