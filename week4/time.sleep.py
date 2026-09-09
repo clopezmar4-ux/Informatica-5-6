@@ -1,11 +1,11 @@
 import time
 def main():
     # example
-    start = 5
-    while start > 0:
+    start = 5 # Initialize
+    while start > 0: # Condition
         print(start)
         time.sleep(2)
-        start -= 1
+        start -= 1 #Update
 
 
 
