@@ -1,8 +1,8 @@
 def main():
 
     doctrine = ["Faith in Jesus Christ", "Repentance", "Baptizm", "Receiving the gift of the Holy Ghost", "Endure"]
-    for number, principles in enumerate(doctrine, start = 1):
-        print(f"{number}.{principles}")
+    for principles in range(len(doctrine)):
+        print(f"{principles+1}.{doctrine[principles]}")
 
 
 if __name__=="__main__":
