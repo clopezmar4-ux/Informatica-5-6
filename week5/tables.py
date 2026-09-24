@@ -8,6 +8,7 @@ def main():
                  break
             if user == "yes":
                 table = int(input("Enter a number (1-10): "))
+                print(f"Here is the {table} times table")
                 if table in number:
                     for num in range(len(number)):
                         times = table * (num+1)
