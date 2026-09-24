@@ -1,0 +1,9 @@
+Write a description for a while loop.
+    A while loop help you to create a cycle in a particular condition and you can update depending in waht you want to run in the code and you will need to breaked in some point.
+
+
+Write a description for a for loop.
+    a for loop is a form of iteration and it help you to find specific things with an index in a variable.
+
+Compare a while loop to a for loop.
+    Both can help you with different conditions but they are not the same in all because you can update both but one will be like a cycle you need to break and the other one is an iteration that will be continuelly changing.

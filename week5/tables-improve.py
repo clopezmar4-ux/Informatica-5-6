@@ -1,11 +1,14 @@
 def main():
 
+    valid_nums = []
+    for i in range(1,11):
+        valid_nums.append(str(i))
     while True:
-        times_table = input("Enter a number: ").lower().strip()
+        times_table = input("Enter a number (1-10 or exit): ").lower().strip()
 
         if times_table == "exit":
             break
-        else:
+        elif times_table in valid_nums:
 
             max_value = int(input("Enter maximun value for the times table: "))
             print(f"Here is the {times_table} times table")
@@ -13,6 +16,8 @@ def main():
             for x in range(1,max_value + 1):
                 answer = x * int(times_table)
                 print(f"{x} times {times_table} is {answer}")
+        else:
+            print("Invalid command.")
 
 if __name__=="__main__":
     main()
