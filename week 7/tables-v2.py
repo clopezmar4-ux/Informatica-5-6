@@ -7,7 +7,7 @@ def main():
             if times_table >= 1 and times_table <=10:
                 break
         except ValueError:
-            print("You must enter a positive number")
+            print("You must enter a number")
 
     if times_table >= 1 and times_table <= 10:
         while True:
