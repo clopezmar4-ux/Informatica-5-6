@@ -1,18 +1,15 @@
 def main():
-    valid_nums = []
-
-    for i in range(1,11):
-        valid_nums.append(str(i))
 
     print("Welcome to the time tables quiz!")
     while True:
         try:
-            times_table = int(input("Enter a times table that you would like to be tested on: "))
-            break
+            times_table = int(input("Enter a times table that you would like to be tested on (1-10): "))
+            if times_table >= 1 and times_table <=10:
+                break
         except ValueError:
-            print("You must enter a number")
+            print("You must enter a positive number")
 
-    if times_table in valid_nums:
+    if times_table >= 1 and times_table <= 10:
         while True:
             try:
                 max_value = int(input("Enter maximun value for the times table: "))
