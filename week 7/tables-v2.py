@@ -6,6 +6,8 @@ def main():
             times_table = int(input("Enter a times table that you would like to be tested on (1-10): "))
             if times_table >= 1 and times_table <=10:
                 break
+            else:
+                print("Write a positive number")
         except ValueError:
             print("You must enter a positive number")
 
