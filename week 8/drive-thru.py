@@ -3,7 +3,7 @@ def main():
 
 
     welcome()
-    answer = input("Whats your order: ").lower()
+    answer = input("Whats your order: ").lower().strip()
     give_item(answer)
 
 def welcome():
@@ -15,15 +15,15 @@ def welcome():
 
 def give_item(item):
     emoji = ["🍔", "🍟", "🥤", "🍦", "🍪"]
-    if item == "Cheeseburger":
+    if item == "cheeseburger":
         print(f"{emoji[0]}")
-    elif item == "Fries":
+    elif item == "fries":
         print(f"{emoji[1]}")
-    elif item == "Soda":
+    elif item == "soda":
         print(f"{emoji[2]}")
-    elif item == "Ice Cream":
+    elif item == "ice Cream":
         print(f"{emoji[3]}")
-    elif item == "Cookie":
+    elif item == "cookie":
         print(f"{emoji[4]}")
 
 
