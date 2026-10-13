@@ -6,7 +6,7 @@
 # Make a variable of list(input) for the answer of the user
 # Make a variable = file
 # Make a for loop
-# make a variable 
+# make a variable= "_" * len(file)
 # Make an if statement for the letter the user enter
 # Make a elif to say if the letter is not in the word
 #
